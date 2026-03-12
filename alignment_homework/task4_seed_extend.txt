@@ -1,0 +1,82 @@
+=== Задание 4: Seed-and-Extend ===
+Референс D: CTAGGATCCAGGCATACGA
+Запрос Q: GGATCCATTCATTA
+k = 4, X = 2
+
+Индекс БД (k-мер -> позиции в D):
+{
+  "CTAG": [
+    0
+  ],
+  "TAGG": [
+    1
+  ],
+  "AGGA": [
+    2
+  ],
+  "GGAT": [
+    3
+  ],
+  "GATC": [
+    4
+  ],
+  "ATCC": [
+    5
+  ],
+  "TCCA": [
+    6
+  ],
+  "CCAG": [
+    7
+  ],
+  "CAGG": [
+    8
+  ],
+  "AGGC": [
+    9
+  ],
+  "GGCA": [
+    10
+  ],
+  "GCAT": [
+    11
+  ],
+  "CATA": [
+    12
+  ],
+  "ATAC": [
+    13
+  ],
+  "TACG": [
+    14
+  ],
+  "ACGA": [
+    15
+  ]
+}
+
+Все seeds (k-мер, позиция в Q, позиция в D):
+  'GGAT' -> (Q[0], D[3])
+  'GATC' -> (Q[1], D[4])
+  'ATCC' -> (Q[2], D[5])
+  'TCCA' -> (Q[3], D[6])
+
+Лучшее выравнивание:
+  k-мер: 'GGAT'
+  Smax (итоговый счёт выравнивания): 5
+  Расширение влево: Smax = 4, Scur = 2
+  Расширение вправо: Smax = 7, Scur = 5
+
+Расширенные последовательности (влево + seed + вправо):
+-GGATCCAT
+AGGATCCAG
+
+Итоговое выравнивание:
+-GGATCCAT
+AGGATCCAG
+
+Scur для всех расширений k-меров (влево / вправо):
+  k-мер 'GGAT': Scur_left=2, Scur_right=5
+  k-мер 'GATC': Scur_left=3, Scur_right=4
+  k-мер 'ATCC': Scur_left=4, Scur_right=3
+  k-мер 'TCCA': Scur_left=5, Scur_right=2
