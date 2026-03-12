@@ -1,0 +1,13 @@
+git clone ...
+git remote remove origin
+git remote add origin <url>
+git add ...
+git commit -m ...
+git checkout -b investigation
+git checkout -b cleaning
+git checkout main
+git merge investigation
+git merge cleaning
+git branch -d investigation
+git branch -d cleaning
+git push origin main
