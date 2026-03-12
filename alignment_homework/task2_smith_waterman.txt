@@ -1,0 +1,19 @@
+=== Задание 2: Локальное выравнивание (Smith-Waterman) ===
+X = ATGCCG, Y = ATCG
+Match = 3, Mismatch = -3, Gap = -2
+
+Матрица H:
+      _   A   T   C   G
+  _     0    0    0    0    0
+  A     0    3    1    0    0
+  T     0    1    6    4    2
+  G     0    0    4    3    7
+  C     0    0    2    7    5
+  C     0    0    0    5    4
+  G     0    0    0    3    8
+
+Score = 8
+
+Выравнивание:
+ATGCCG
+AT--CG
