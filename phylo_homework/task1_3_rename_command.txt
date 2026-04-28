@@ -1,0 +1,16 @@
+Команда для задания 1.3 (phylo_hm.pdf): переименование заголовков FASTA
+
+1) Положите FASTA с ортологами (белковые последовательности) рядом с этим файлом,
+   например: bioinf/orthologs_raw.fasta
+
+2) Запустите:
+   python ..\phylo_homework.py --task 1.3 --in "bioinf\orthologs_raw.fasta"
+
+Результаты будут сохранены в:
+  - bioinf/task1_3_renamed.fasta
+  - bioinf/task1_3_rename_command.txt (этот файл можно оставить как “команду, которой пользовались”)
+
+Формат переименования:
+  Было:  >NP_061820.1 CYCS [organism=Homo sapiens] [GeneID=54205]
+  Стало: >Homo_sapiens_NP_061820.1
+
