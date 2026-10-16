@@ -1,0 +1,9 @@
+Sample: AL_k0_r1_d3_p_V4V5_C (SRR17307316), R1
+Reads: 108,335
+Read length: 251 bp (min 251, max 251)
+Mean GC: 57.4%
+Mean Phred across read: 35.8
+Mean Phred first 25 nt: 35.9
+Mean Phred last 50 nt: 34.1
+Approx. duplication (first 108,335 reads): 45.2% unique=59,359
+N content (mean %): 0.000%
